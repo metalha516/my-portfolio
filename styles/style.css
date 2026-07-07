@@ -125,4 +125,44 @@
     font-family: "JetBrains Mono", monospace;
 }
 
+.project{
+    text-align: center; 
+}
+
+.project .main-text{
+        font-size: 40px;
+        margin: 15px 0;
+}
+
+.project .cub-text{
+    font-size: 20px;
+}
+
+.project .grid{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 0px;
+}
+
+.project-item{
+    background: rgba(240, 248, 255, 0.359);
+    display: flex;
+    align-items: center;
+    /* padding: 8px; */
+    overflow: hidden;
+    object-fit: fill;
+}
+
+.project .grid .project-item .project-pic{
+    max-width: 100%;
+}
+
+.project .grid .project-item .project-data{
+    padding: 4rem;
+    text-align: justify;
+}
+
+
 
