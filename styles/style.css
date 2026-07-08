@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
 
 
+:root{
+    --primary-color : #e95c6c;
+    --bg-color : #eccca6;
+    --first-color : black;
+    --f-color: white;
+    --txt-color : #27456c;
+    --h-color: #47748b;
+}
 
 
 
@@ -8,6 +16,11 @@
     margin: 0px;
     padding: 0px;
     font-family: "Space Grotesk", sans-serif;
+    color: var(--txt-color);
+}
+
+body{
+    background: #000;
 }
 
 .container{
@@ -37,20 +50,20 @@
 
 
 .nav-bar .uni-list .nav-bar-item{
-    padding: 3px 8px;
-    background: white;
+    padding: 8px 10px;
+    font-size: larger;
 }
 
 
 .nav-bar .uni-list .nav-bar-item:hover{
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid var(--primary-color);
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.4 ease-out;
 }
 
 .hero{
-    background: #c7c5c5;
+    background: var(--bg-color);
 }
 
 .hero .hero-section{
@@ -80,8 +93,8 @@
     border: none;
     border-radius: 10px;
     font-size: 18px;
-    background: #000;
-    color: white;
+    background: var(--primary-color);
+    color: var(--f-color);
 }
 
 .about-me-section{
@@ -119,14 +132,14 @@
 .about-me-section .about-text .headline{
     font-weight: bolder;
     font-size: 21px;
-    color: red;
-    border-bottom: 2px solid red;
+    color: var(--h-color);
+    border-bottom: 2px solid var(--h-color);
 }
 
 .about-me-section .about-text .credit{
     font-weight: bolder;
     font-size: 20px;
-    color: red;
+    color: var(--h-color);
     font-family: "JetBrains Mono", monospace;
 }
 
@@ -152,7 +165,7 @@
 }
 
 .project-item{
-    background: rgba(240, 248, 255, 0.359);
+    background: var(--bg-color);
     display: flex;
     align-items: center;
     /* padding: 8px; */
@@ -164,21 +177,28 @@
     max-width: 100%;
 }
 
+.project .grid .project-item .project-title{
+    background: var(--bg-color);
+}
+
+
 .project .grid .project-item .project-data{
     padding: 4rem;
     text-align: justify;
     overflow: hidden;
+    background: var(--bg-color);
 }
 
 
 .project .grid .project-item .project-data .details{
     /* background: #000; */
     padding: 15px 0;
+    background: var(--bg-color);
 }
 .project .grid .project-item .project-data .visit{
-    background: #000;
+    background: var(--primary-color);
     padding: 2px 15px;
-    color: white;
+    color: var(--f-color);
     text-decoration: none;
     border-radius: 5px;
 }
@@ -199,7 +219,7 @@
 }
 
 .contact .contact-table .e-mail{
-    background: #ff0;
+    background: var(--bg-color);
     border-radius: 15px;
     padding: 10px;
     height: 150px;
@@ -210,12 +230,14 @@
 }
 
 .contact .contact-table .e-mail .icon-elem{
-    color: rgb(0, 0, 0);
+    color: var(--first-color);
     font-size: 30px;
     padding: 10px;
+    background: var(--bg-color);
 }
 
 .contact .contact-table .e-mail .element-text{
-    font-size: 20;
+    font-size: 20;    
+    background: var(--bg-color);
 }
 
