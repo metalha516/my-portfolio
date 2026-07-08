@@ -4,14 +4,11 @@
 :root{
     --primary-color : #e95c6c;
     --bg-color : #eccca6;
-    --first-color : black;
+    --first-color :#1f395b; ;
     --f-color: white;
     --txt-color : #27456c;
-    --h-color: #47748b;
+    --h-color: #e95c6c;
 }
-
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -19,12 +16,12 @@
     color: var(--txt-color);
 }
 
-body{
-    background: #000;
+a{
+    text-decoration: none;
 }
 
 .container{
-    width: 1200px;
+    width: 1400px;
     margin: auto;
 }
 
@@ -34,11 +31,17 @@ body{
 
 .nav-bar{
     display: flex;
-    justify-content: space-around;
-    padding: 8px 0;
+    justify-content: space-between;
     align-items: center;
     /* background: #ff0000; */
 }
+
+
+.nav-bar .main-text{
+    font-size: larger;
+}
+
+
 
 .nav-bar .uni-list{
     display: flex;
@@ -50,7 +53,7 @@ body{
 
 
 .nav-bar .uni-list .nav-bar-item{
-    padding: 8px 10px;
+    padding: 10px 10px;
     font-size: larger;
 }
 
@@ -92,7 +95,16 @@ body{
     outline: none;
     border: none;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bolder;
+    /* background: var(--primary-color); */
+
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    background: none;
+}
+
+.btn:hover{
     background: var(--primary-color);
     color: var(--f-color);
 }
@@ -195,13 +207,22 @@ body{
     padding: 15px 0;
     background: var(--bg-color);
 }
+
 .project .grid .project-item .project-data .visit{
-    background: var(--primary-color);
+    background: none;
     padding: 2px 15px;
-    color: var(--f-color);
+    color: var(--primary-color);
+    font-weight: bolder;
+    border: 3px solid var(--primary-color);
     text-decoration: none;
     border-radius: 5px;
 }
+.project .grid .project-item .project-data .visit:hover{
+    background: var(--primary-color);
+    color: var(--f-color);
+}
+
+
 
 .contact{
     display: flex;
@@ -231,13 +252,28 @@ body{
 
 .contact .contact-table .e-mail .icon-elem{
     color: var(--first-color);
-    font-size: 30px;
+    font-size: 50px;
     padding: 10px;
     background: var(--bg-color);
 }
 
+.contact .contact-table .e-mail .element-text:hover{
+    color: var(--primary-color);
+    background: var(--bg-color);
+}
+.contact .contact-table .e-mail .icon-elem:hover{
+    color: var(--primary-color);
+
+}
+
 .contact .contact-table .e-mail .element-text{
-    font-size: 20;    
+    font-size: 30; 
+    font-weight: bolder;   
+    color: var(--first-color);
     background: var(--bg-color);
 }
 
+
+.contact .contact-table .e-mail .social-links{
+    padding: 10px 10px;
+}
